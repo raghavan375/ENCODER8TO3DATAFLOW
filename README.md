@@ -1,4 +1,9 @@
-### ENCODER 8TO3 DATAFLOW Modelling
+# Name : THIRAVIA RAJA RAGHAVAN G
+
+# REG NO: 212224050055
+
+## EXP.NO:5 
+## ENCODER 8TO3 DATAFLOW Modelling
 
 **AIM:**
 
@@ -48,29 +53,38 @@ Figure 02  Encoder 8 * 3
 
 **PROGRAM**
 ```
-module enc(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
-input y0,y1,y2,y3,y4,y5,y6,y7;
-output a,b,c;
-assign a= (y4 | y5 | y6 | y7);
-assign b= (y2 | y3 | y6 | y7);
-assign c= (y1 | y3 | y5 | y7);
+/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
+
+Developed by: DINESH R
+RegisterNumber: 212224240037
+
+*/
+```
+
+```py
+module encodder(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+assign a0 = d1|d3|d5|d7;
+assign a1 =d2|d3|d6|d7;
+assign a2 =d4|d5|d6|d7;
 endmodule
 ```
-Developed by: Thiraviya Raja Raghavan 
-RegisterNumber:212224050054
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
-![437924170-aec701d3-6445-4d32-88a7-173c9bad9c56](https://github.com/user-attachments/assets/cf834f0b-c2b2-449a-8142-23e8562735df)
+![image](https://github.com/gauthamkrishna7/ENCODER8TO3DATAFLOW/assets/141175025/60eebe0b-b007-4c23-a016-6436f6061356)
 
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
-![437924319-087c67ed-dbb6-4677-a9e9-e519b983bc1d](https://github.com/user-attachments/assets/5a200ceb-9357-4911-b48d-385ba6583a7d)
+![image](https://github.com/gauthamkrishna7/ENCODER8TO3DATAFLOW/assets/141175025/451fb2a6-c498-4620-a4cc-fbcc1d7ac99c)
+
 
 **RESULTS**
 
-Implementing Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables executed succesfully.
+Thus the code is executed successfully.
+
 
 
 
