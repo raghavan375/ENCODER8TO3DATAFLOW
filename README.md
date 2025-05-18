@@ -1,9 +1,4 @@
-# Name : THIRAVIA RAJA RAGHAVAN G
-
-# REG NO: 212224050055
-
-## EXP.NO:5 
-## ENCODER 8TO3 DATAFLOW Modelling
+### ENCODER 8TO3 DATAFLOW Modelling
 
 **AIM:**
 
@@ -41,50 +36,30 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-1.Type the program in Quartus software.
-
-2.Compile and run the program.
-
-3.Generate the RTL schematic and save the logic diagram.
-
-4.Create nodes for inputs and outputs to generate the timing diagram.
-
-5.For different input combinations generate the timing diagram.
+/* write all the steps invloved */
 
 **PROGRAM**
-```
+
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: DINESH R
-RegisterNumber: 212224240037
-
+Developed by: RegisterNumber:
 */
-```
-
-```py
-module encodder(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
-input d0,d1,d2,d3,d4,d5,d6,d7;
-output a0,a1,a2;
-assign a0 = d1|d3|d5|d7;
-assign a1 =d2|d3|d6|d7;
-assign a2 =d4|d5|d6|d7;
+module exp5(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+input y0,y1,y2,y3,y4,y5,y6,y7;
+output a,b,c;
+assign a= (y4 | y5 | y6 | y7);
+assign b= (y2 | y3 | y6 | y7);
+assign c= (y1 | y3 | y5 | y7);
 endmodule
-```
-
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
-![image](https://github.com/gauthamkrishna7/ENCODER8TO3DATAFLOW/assets/141175025/60eebe0b-b007-4c23-a016-6436f6061356)
+![Screenshot 2025-04-15 114747](https://github.com/user-attachments/assets/1ced35ca-b739-4817-9f50-ec548e83b424)
 
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
-![image](https://github.com/gauthamkrishna7/ENCODER8TO3DATAFLOW/assets/141175025/451fb2a6-c498-4620-a4cc-fbcc1d7ac99c)
+![Screenshot 2025-04-15 115055](https://github.com/user-attachments/assets/0295dcb5-2d39-4108-b3e8-c17bbc6c6f94)
 
 
 **RESULTS**
-
-Thus the code is executed successfully.
-
-
-
-
+sucessfully implemented Encoder 8 To 3 in Dataflow Modelling using verilog and validated their functionality using their functional tables
